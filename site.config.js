@@ -1,4 +1,4 @@
 window.DECK_LEDGER_CONFIG = {
   dataUrl: "data/decks.json",
-  apiEndpoint: ""
+  apiEndpoint: "https://deckandtrade.vercel.app/api/decks"
 };
