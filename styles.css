@@ -870,3 +870,10 @@ tbody tr:last-child td {
   align-items: center;
   gap: 8px;
 }
+
+.checkbox-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  min-height: 18px;
+  flex: 0 0 auto;
+}
