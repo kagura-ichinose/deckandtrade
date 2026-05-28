@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T08:27:57.600Z",
+  "updatedAt": "2026-05-28T08:33:08.474Z",
   "decks": [
     {
       "id": "091b2597-7dc9-4247-baff-49c6a9971963",
@@ -31,7 +31,7 @@
       "memo": "",
       "showCardList": false,
       "cardListImageUrl": "",
-      "updatedAt": "2026-05-28T08:27:58.020Z",
+      "updatedAt": "2026-05-28T08:33:08.875Z",
       "references": [],
       "cards": [
         {
@@ -42,8 +42,14 @@
         },
         {
           "name": "ピカチュウδ",
-          "required": 4,
-          "owned": 4,
+          "required": 3,
+          "owned": 3,
+          "price": 0
+        },
+        {
+          "name": "ピカチュウδ",
+          "required": 1,
+          "owned": 1,
           "price": 0
         },
         {
@@ -56,6 +62,18 @@
           "name": "タマタマδ",
           "required": 4,
           "owned": 4,
+          "price": 0
+        },
+        {
+          "name": "ホロンのコイル",
+          "required": 2,
+          "owned": 2,
+          "price": 0
+        },
+        {
+          "name": "ホロンのポワルン",
+          "required": 3,
+          "owned": 3,
           "price": 0
         }
       ]
