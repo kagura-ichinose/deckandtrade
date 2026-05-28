@@ -1,12 +1,13 @@
 {
-  "updatedAt": "2026-05-28T05:32:52.967Z",
+  "updatedAt": "2026-05-28T06:28:14.014Z",
   "decks": [
     {
       "id": "99002079-0961-4690-ac96-17bbe0d03f7c",
       "name": "ライエッグ",
       "regulation": "ADVPCG",
       "memo": "",
-      "updatedAt": "2026-05-28T05:32:54.023Z",
+      "showCardList": true,
+      "updatedAt": "2026-05-28T06:28:14.400Z",
       "references": [],
       "cards": [
         {
@@ -34,6 +35,7 @@
       "name": "アグロ草",
       "regulation": "GLC",
       "memo": "エネルギーの枚数を盛りたい。",
+      "showCardList": false,
       "updatedAt": "2026-05-28T05:01:48.506Z",
       "references": [
         {
@@ -83,6 +85,7 @@
       "name": "ドラパゲッコウガ",
       "regulation": "スタンダード",
       "memo": "ワニノコの枠をシェイミに交換するか検討中。",
+      "showCardList": false,
       "updatedAt": "2026-05-28T05:01:17.036Z",
       "references": [
         {
@@ -128,6 +131,7 @@
       "name": "悪バレット",
       "regulation": "エクストラ",
       "memo": "複数の勝ち筋を持てるが、グッズ配分をもう少し詰めたい。",
+      "showCardList": false,
       "updatedAt": "2026-05-12T15:20:00.000Z",
       "references": [
         {
