@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-05-28T04:47:48.093Z",
+  "updatedAt": "2026-05-28T04:58:00.382Z",
   "decks": [
     {
       "id": "deck-gardy",
       "name": "サーナイトex",
-      "regulation": "スタンダード",
+      "regulation": "GLC",
       "memo": "安定感を重視したリスト。入れ替え候補はナンジャモの枚数とACE SPEC枠。",
-      "updatedAt": "2026-05-28T04:47:48.726Z",
+      "updatedAt": "2026-05-28T04:58:00.985Z",
       "references": [
         {
           "title": "note: シティリーグ入賞構築",
