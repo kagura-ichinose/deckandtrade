@@ -169,6 +169,7 @@ function normalizeDecks(decks) {
     regulation: deck.regulation || "未分類",
     memo: deck.memo || "",
     showCardList: deck.showCardList === true,
+    cardListImageUrl: deck.cardListImageUrl || "",
     updatedAt: deck.updatedAt || new Date().toISOString(),
     references: Array.isArray(deck.references) ? deck.references.map((reference) => ({
       title: reference.title || "",
