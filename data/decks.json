@@ -1,46 +1,28 @@
 {
-  "updatedAt": "2026-05-28T05:29:12.062Z",
+  "updatedAt": "2026-05-28T05:32:52.967Z",
   "decks": [
     {
       "id": "99002079-0961-4690-ac96-17bbe0d03f7c",
       "name": "ライエッグ",
       "regulation": "ADVPCG",
       "memo": "",
-      "updatedAt": "2026-05-28T05:29:13.051Z",
+      "updatedAt": "2026-05-28T05:32:54.023Z",
       "references": [],
       "cards": [
         {
-          "name": "ライチュウ(δ種)",
+          "name": "ライチュウδ",
           "required": 4,
           "owned": 4,
           "price": 0
         },
         {
-          "name": "ピカチュウ(δ種)",
-          "required": 4,
+          "name": "あ",
+          "required": 1,
           "owned": 0,
           "price": 0
         },
         {
-          "name": "ナッシー(δ種)",
-          "required": 4,
-          "owned": 0,
-          "price": 0
-        },
-        {
-          "name": "タマタマ(δ種)",
-          "required": 4,
-          "owned": 0,
-          "price": 0
-        },
-        {
-          "name": "ホロンのポワルン",
-          "required": 3,
-          "owned": 0,
-          "price": 0
-        },
-        {
-          "name": "",
+          "name": "い",
           "required": 1,
           "owned": 0,
           "price": 0
