@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T08:26:22.694Z",
+  "updatedAt": "2026-05-28T08:27:57.600Z",
   "decks": [
     {
       "id": "091b2597-7dc9-4247-baff-49c6a9971963",
@@ -29,9 +29,9 @@
       "name": "ライエッグ",
       "regulation": "ADVPCG",
       "memo": "",
-      "showCardList": true,
+      "showCardList": false,
       "cardListImageUrl": "",
-      "updatedAt": "2026-05-28T08:25:07.681Z",
+      "updatedAt": "2026-05-28T08:27:58.020Z",
       "references": [],
       "cards": [
         {
