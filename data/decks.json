@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T08:20:56.029Z",
+  "updatedAt": "2026-05-28T08:23:19.766Z",
   "decks": [
     {
       "id": "091b2597-7dc9-4247-baff-49c6a9971963",
@@ -79,7 +79,7 @@
       "memo": "ワニノコの枠をシェイミに交換するか検討中。",
       "showCardList": false,
       "cardListImageUrl": "",
-      "updatedAt": "2026-05-28T05:01:17.036Z",
+      "updatedAt": "2026-05-28T08:23:20.427Z",
       "references": [
         {
           "title": "note: 環境考察",
@@ -88,34 +88,10 @@
       ],
       "cards": [
         {
-          "name": "ミライドンex",
-          "required": 2,
-          "owned": 1,
-          "price": 580
-        },
-        {
-          "name": "テツノカイナex",
-          "required": 2,
-          "owned": 2,
-          "price": 780
-        },
-        {
-          "name": "ジェネレーター",
-          "required": 4,
-          "owned": 4,
-          "price": 110
-        },
-        {
-          "name": "森の封印石",
+          "name": "",
           "required": 1,
           "owned": 0,
-          "price": 450
-        },
-        {
-          "name": "雷エネルギー",
-          "required": 12,
-          "owned": 16,
-          "price": 30
+          "price": 0
         }
       ]
     }
