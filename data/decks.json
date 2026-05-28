@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T08:24:07.978Z",
+  "updatedAt": "2026-05-28T08:25:07.176Z",
   "decks": [
     {
       "id": "091b2597-7dc9-4247-baff-49c6a9971963",
@@ -31,7 +31,7 @@
       "memo": "",
       "showCardList": true,
       "cardListImageUrl": "",
-      "updatedAt": "2026-05-28T06:28:14.400Z",
+      "updatedAt": "2026-05-28T08:25:07.681Z",
       "references": [],
       "cards": [
         {
@@ -41,15 +41,21 @@
           "price": 0
         },
         {
-          "name": "あ",
-          "required": 1,
-          "owned": 0,
+          "name": "ピカチュウδ",
+          "required": 4,
+          "owned": 4,
           "price": 0
         },
         {
-          "name": "い",
-          "required": 1,
-          "owned": 0,
+          "name": "ナッシーδ",
+          "required": 4,
+          "owned": 4,
+          "price": 0
+        },
+        {
+          "name": "タマタマδ",
+          "required": 4,
+          "owned": 4,
           "price": 0
         }
       ]
