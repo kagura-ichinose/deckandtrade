@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T08:15:19.320Z",
+  "updatedAt": "2026-05-28T08:15:27.192Z",
   "decks": [
     {
       "id": "99002079-0961-4690-ac96-17bbe0d03f7c",
@@ -38,17 +38,8 @@
       "memo": "エネルギーの枚数を盛りたい。",
       "showCardList": true,
       "cardListImageUrl": "https://pbs.twimg.com/media/HCAgyCZaMAAa__V?format=jpg&name=large",
-      "updatedAt": "2026-05-28T08:15:20.065Z",
-      "references": [
-        {
-          "title": "note: シティリーグ入賞構築",
-          "url": "https://note.com/"
-        },
-        {
-          "title": "大会ログ",
-          "url": "https://example.com/"
-        }
-      ],
+      "updatedAt": "2026-05-28T08:15:28.288Z",
+      "references": [],
       "cards": [
         {
           "name": "以下の通り",
