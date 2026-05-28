@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T08:25:37.618Z",
+  "updatedAt": "2026-05-28T08:25:48.096Z",
   "decks": [
     {
       "id": "091b2597-7dc9-4247-baff-49c6a9971963",
@@ -85,7 +85,7 @@
       "memo": "ワニノコの枠をシェイミに交換するか検討中。",
       "showCardList": false,
       "cardListImageUrl": "",
-      "updatedAt": "2026-05-28T08:25:38.061Z",
+      "updatedAt": "2026-05-28T08:25:48.929Z",
       "references": [
         {
           "title": "note: 環境考察",
@@ -96,7 +96,7 @@
         {
           "name": "a",
           "required": 60,
-          "owned": 0,
+          "owned": 60,
           "price": 0
         }
       ]
