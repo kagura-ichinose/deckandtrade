@@ -525,7 +525,31 @@ function createCardListButton(deck) {
       .map((card) => `${card.name} ×${card.required}`)
       .join("\n");
 
-    alert(list || "カードリストがありません。");
+    const imageUrl = deck.cardListImageUrl || "";
+
+const html = `
+<div style="max-height:70vh;overflow:auto;">
+  <pre style="white-space:pre-wrap;font-size:14px;">${list}</pre>
+  ${
+    imageUrl
+      ? `<img src="${imageUrl}" style="width:100%;margin-top:12px;border-radius:8px;">`
+      : ""
+  }
+</div>
+`;
+
+const dialog = window.open("", "_blank", "width=700,height=900");
+
+dialog.document.write(`
+  <html>
+    <head>
+      <title>${deck.name}</title>
+    </head>
+    <body style="font-family:sans-serif;padding:16px;">
+      ${html}
+    </body>
+  </html>
+`);
   });
 
   wrap.append(button);
@@ -614,6 +638,8 @@ function openEditor(deckId) {
   
   ensureShowCardListControl();
   document.querySelector("#showCardList").checked = deck?.showCardList === true;
+
+  document.querySelector("#cardListImageUrl").value = deck?.cardListImageUrl || "";
   
   elements.cardRows.replaceChildren(...(deck?.cards?.length ? deck.cards : [blankCard()]).map(createCardRow));
   elements.referenceRows.replaceChildren(...(deck?.references?.length ? deck.references : [blankReference()]).map(createReferenceRow));
@@ -634,7 +660,11 @@ function ensureShowCardListControl() {
     <label class="checkbox-row">
       <input id="showCardList" type="checkbox">
       カードリストを公開する
-    </label>
+      </lavel>
+      <label class="public-setting">
+        <span>カードリスト画像URL</span>
+        <input id="cardListImageUrl" type="url" placeholder="https://...">
+      </label>
   `;
 
   elements.deckMemo.closest("label").after(label);
@@ -726,6 +756,7 @@ function collectFormDeck() {
     regulation: elements.deckRegulation.value.trim(),
     memo: elements.deckMemo.value.trim(),
     showCardList: document.querySelector("#showCardList")?.checked === true,
+    cardListImageUrl: document.querySelector("#cardListImageUrl")?.value.trim() || "",
     cards,
     references,
     updatedAt: new Date().toISOString()
