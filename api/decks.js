@@ -131,6 +131,7 @@ function normalizeDecks(decks) {
     regulation: cleanString(deck.regulation) || "未分類",
     memo: cleanString(deck.memo),
     showCardList: deck.showCardList === true,
+    cardListImageUrl: cleanString(deck.cardListImageUrl),
     updatedAt: cleanString(deck.updatedAt) || new Date().toISOString(),
     references: Array.isArray(deck.references) ? deck.references.map((reference) => ({
       title: cleanString(reference.title),
