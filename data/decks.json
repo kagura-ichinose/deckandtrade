@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-26T00:00:00.000Z",
+  "updatedAt": "2026-05-28T04:46:02.073Z",
   "decks": [
     {
       "id": "deck-gardy",
@@ -52,10 +52,10 @@
     },
     {
       "id": "deck-miraidon",
-      "name": "ミライドンex",
+      "name": "ミライドン",
       "regulation": "スタンダード",
       "memo": "スピード重視。雷エネルギーの枚数とサブアタッカーを調整中。",
-      "updatedAt": "2026-05-18T11:30:00.000Z",
+      "updatedAt": "2026-05-28T04:46:03.096Z",
       "references": [
         {
           "title": "note: 環境考察",
