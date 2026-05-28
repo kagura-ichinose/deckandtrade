@@ -1,6 +1,29 @@
 {
-  "updatedAt": "2026-05-28T08:15:27.192Z",
+  "updatedAt": "2026-05-28T08:20:56.029Z",
   "decks": [
+    {
+      "id": "091b2597-7dc9-4247-baff-49c6a9971963",
+      "name": "ルガゾロ",
+      "regulation": "2019新潟",
+      "memo": "",
+      "showCardList": true,
+      "cardListImageUrl": "https://pbs.twimg.com/media/HJZG_IVasAAEg9Z?format=jpg&name=medium",
+      "updatedAt": "2026-05-28T08:20:56.515Z",
+      "references": [
+        {
+          "title": "トレーナーズウェブサイト",
+          "url": "https://www.pokemon-card.com/info/2018/20181202_001532.html"
+        }
+      ],
+      "cards": [
+        {
+          "name": "以下の通り",
+          "required": 60,
+          "owned": 60,
+          "price": 0
+        }
+      ]
+    },
     {
       "id": "99002079-0961-4690-ac96-17bbe0d03f7c",
       "name": "ライエッグ",
