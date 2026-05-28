@@ -451,41 +451,6 @@ function createDeckCard(deck) {
     createProgress(stats),
     createStats(stats),
     createCardListButton(deck),
-    function showCardListModal(title, list, imageUrl) {
-  const overlay = document.createElement("div");
-  overlay.className = "card-list-modal-overlay";
-
-  overlay.innerHTML = `
-    <div class="card-list-modal">
-      <div class="card-list-modal-header">
-        <h2></h2>
-        <button type="button" class="icon-button card-list-modal-close">×</button>
-      </div>
-      <pre class="card-list-modal-text"></pre>
-      ${
-        imageUrl
-          ? `<img class="card-list-modal-image" src="${imageUrl}" alt="カードリスト画像">`
-          : ""
-      }
-    </div>
-  `;
-
-  overlay.querySelector("h2").textContent = title;
-  overlay.querySelector(".card-list-modal-text").textContent =
-    list || "カードリストがありません。";
-
-  overlay.querySelector(".card-list-modal-close").addEventListener("click", () => {
-    overlay.remove();
-  });
-
-  overlay.addEventListener("click", (event) => {
-    if (event.target === overlay) {
-      overlay.remove();
-    }
-  });
-
-  document.body.append(overlay);
-}
     createMemo(deck.memo),
     createReferences(deck.references)
   );
