@@ -560,24 +560,56 @@ function createCardListButton(deck) {
       .map((card) => `${card.name} ×${card.required}`)
       .join("\n");
 
-    const imageUrl = deck.cardListImageUrl || "";
-
-const html = `
-<div style="max-height:70vh;overflow:auto;">
-  <pre style="white-space:pre-wrap;font-size:14px;">${list}</pre>
-  ${
-    imageUrl
-      ? `<img src="${imageUrl}" style="width:100%;margin-top:12px;border-radius:8px;">`
-      : ""
-  }
-</div>
-`;
-
-showCardListModal(deck.name, list, imageUrl);
+    showCardListModal(deck.name, list, deck.cardListImageUrl || "");
   });
 
   wrap.append(button);
   return wrap;
+}
+
+function showCardListModal(title, list, imageUrl) {
+  const overlay = document.createElement("div");
+  overlay.className = "card-list-modal-overlay";
+
+  const modal = document.createElement("div");
+  modal.className = "card-list-modal";
+
+  const header = document.createElement("div");
+  header.className = "card-list-modal-header";
+
+  const heading = document.createElement("h2");
+  heading.textContent = title;
+
+  const closeButton = document.createElement("button");
+  closeButton.type = "button";
+  closeButton.className = "icon-button card-list-modal-close";
+  closeButton.textContent = "×";
+
+  header.append(heading, closeButton);
+
+  const pre = document.createElement("pre");
+  pre.className = "card-list-modal-text";
+  pre.textContent = list || "カードリストがありません。";
+
+  modal.append(header, pre);
+
+  if (imageUrl) {
+    const image = document.createElement("img");
+    image.className = "card-list-modal-image";
+    image.src = imageUrl;
+    image.alt = "カードリスト画像";
+    modal.append(image);
+  }
+
+  overlay.append(modal);
+  document.body.append(overlay);
+
+  closeButton.addEventListener("click", () => overlay.remove());
+  overlay.addEventListener("click", (event) => {
+    if (event.target === overlay) {
+      overlay.remove();
+    }
+  });
 }
 
 function createMemo(memo) {
