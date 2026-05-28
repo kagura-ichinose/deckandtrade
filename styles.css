@@ -851,3 +851,22 @@ tbody tr:last-child td {
     width: 100%;
   }
 }
+
+.card-list-area {
+  margin-top: 10px;
+}
+
+.card-list-button {
+  width: 100%;
+}
+
+.public-setting {
+  display: grid;
+  gap: 8px;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
