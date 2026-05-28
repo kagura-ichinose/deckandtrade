@@ -168,6 +168,7 @@ function normalizeDecks(decks) {
     name: deck.name || "無題のデッキ",
     regulation: deck.regulation || "未分類",
     memo: deck.memo || "",
+    showCardList: deck.showCardList === true,
     updatedAt: deck.updatedAt || new Date().toISOString(),
     references: Array.isArray(deck.references) ? deck.references.map((reference) => ({
       title: reference.title || "",
@@ -448,6 +449,7 @@ function createDeckCard(deck) {
   body.append(
     createProgress(stats),
     createStats(stats),
+    createCardListButton(deck),
     createMemo(deck.memo),
     createReferences(deck.references)
   );
@@ -501,6 +503,32 @@ function createStats(stats) {
   });
 
   return statsWrap;
+}
+
+function createCardListButton(deck) {
+  const wrap = document.createElement("div");
+  wrap.className = "card-list-area";
+
+  if (!deck.showCardList) {
+    return wrap;
+  }
+
+  const button = document.createElement("button");
+  button.className = "secondary-button card-list-button";
+  button.type = "button";
+  button.textContent = "カードリストを見る";
+
+  button.addEventListener("click", () => {
+    const list = deck.cards
+      .filter((card) => card.name)
+      .map((card) => `${card.name} ×${card.required}`)
+      .join("\n");
+
+    alert(list || "カードリストがありません。");
+  });
+
+  wrap.append(button);
+  return wrap;
 }
 
 function createMemo(memo) {
@@ -582,10 +610,33 @@ function openEditor(deckId) {
   elements.deckName.value = deck?.name || "";
   elements.deckRegulation.value = deck?.regulation || state.activeRegulation.replace("すべて", "") || "スタンダード";
   elements.deckMemo.value = deck?.memo || "";
+  
+  ensureShowCardListControl();
+  document.querySelector("#showCardList").checked = deck?.showCardList === true;
+  
   elements.cardRows.replaceChildren(...(deck?.cards?.length ? deck.cards : [blankCard()]).map(createCardRow));
   elements.referenceRows.replaceChildren(...(deck?.references?.length ? deck.references : [blankReference()]).map(createReferenceRow));
   elements.dialog.showModal();
   elements.deckName.focus();
+}
+
+function ensureShowCardListControl() {
+  if (document.querySelector("#showCardList")) {
+    return;
+  }
+
+  const label = document.createElement("label");
+  label.className = "public-setting";
+
+  label.innerHTML = `
+    <span>公開設定</span>
+    <label class="checkbox-row">
+      <input id="showCardList" type="checkbox">
+      カードリストを公開する
+    </label>
+  `;
+
+  elements.deckMemo.closest("label").after(label);
 }
 
 function closeEditor() {
@@ -673,6 +724,7 @@ function collectFormDeck() {
     name: elements.deckName.value.trim(),
     regulation: elements.deckRegulation.value.trim(),
     memo: elements.deckMemo.value.trim(),
+    showCardList: document.querySelector("#showCardList")?.checked === true,
     cards,
     references,
     updatedAt: new Date().toISOString()
