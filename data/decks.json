@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T07:22:35.658Z",
+  "updatedAt": "2026-05-28T08:15:19.320Z",
   "decks": [
     {
       "id": "99002079-0961-4690-ac96-17bbe0d03f7c",
@@ -38,7 +38,7 @@
       "memo": "エネルギーの枚数を盛りたい。",
       "showCardList": true,
       "cardListImageUrl": "https://pbs.twimg.com/media/HCAgyCZaMAAa__V?format=jpg&name=large",
-      "updatedAt": "2026-05-28T07:11:43.624Z",
+      "updatedAt": "2026-05-28T08:15:20.065Z",
       "references": [
         {
           "title": "note: シティリーグ入賞構築",
@@ -51,34 +51,10 @@
       ],
       "cards": [
         {
-          "name": "サーナイトex",
-          "required": 2,
-          "owned": 1,
-          "price": 650
-        },
-        {
-          "name": "キルリア",
-          "required": 4,
-          "owned": 4,
-          "price": 180
-        },
-        {
-          "name": "ラルトス",
-          "required": 4,
-          "owned": 3,
-          "price": 120
-        },
-        {
-          "name": "ナンジャモ",
-          "required": 3,
-          "owned": 2,
-          "price": 900
-        },
-        {
-          "name": "ボスの指令",
-          "required": 2,
-          "owned": 2,
-          "price": 160
+          "name": "以下の通り",
+          "required": 60,
+          "owned": 60,
+          "price": 0
         }
       ]
     },
