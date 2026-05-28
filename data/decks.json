@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-05-28T07:11:43.215Z",
+  "updatedAt": "2026-05-28T07:22:35.658Z",
   "decks": [
     {
       "id": "99002079-0961-4690-ac96-17bbe0d03f7c",
@@ -125,57 +125,6 @@
           "name": "雷エネルギー",
           "required": 12,
           "owned": 16,
-          "price": 30
-        }
-      ]
-    },
-    {
-      "id": "deck-darkbox",
-      "name": "悪バレット",
-      "regulation": "エクストラ",
-      "memo": "複数の勝ち筋を持てるが、グッズ配分をもう少し詰めたい。",
-      "showCardList": false,
-      "cardListImageUrl": "",
-      "updatedAt": "2026-05-12T15:20:00.000Z",
-      "references": [
-        {
-          "title": "デッキ解説",
-          "url": "https://example.com/"
-        },
-        {
-          "title": "対戦メモ",
-          "url": ""
-        }
-      ],
-      "cards": [
-        {
-          "name": "ダークライGX",
-          "required": 2,
-          "owned": 2,
-          "price": 420
-        },
-        {
-          "name": "ダークパッチ",
-          "required": 4,
-          "owned": 2,
-          "price": 260
-        },
-        {
-          "name": "バトルサーチャー",
-          "required": 4,
-          "owned": 4,
-          "price": 350
-        },
-        {
-          "name": "かるいし",
-          "required": 2,
-          "owned": 1,
-          "price": 290
-        },
-        {
-          "name": "悪エネルギー",
-          "required": 10,
-          "owned": 12,
           "price": 30
         }
       ]
